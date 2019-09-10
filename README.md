@@ -74,6 +74,7 @@ $ protoc --proto_path=A --python_out=B Location.proto
 ### socket应用
 建立socket连接，向服务端发送数据
 ```
+NSData *data = [location data];
 [self.tcpSocket writeData:data withTimeout:-1 tag:110];
 ```
 处理接收的数据
