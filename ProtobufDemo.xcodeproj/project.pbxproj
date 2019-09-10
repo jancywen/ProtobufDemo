@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		091BC38E2326256C00BA9E77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 091BC38D2326256C00BA9E77 /* main.m */; };
 		091BC3982326256C00BA9E77 /* ProtobufDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 091BC3972326256C00BA9E77 /* ProtobufDemoTests.m */; };
 		091BC3A32326256C00BA9E77 /* ProtobufDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 091BC3A22326256C00BA9E77 /* ProtobufDemoUITests.m */; };
+		091BC3B523263F7000BA9E77 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 091BC3B123263F7000BA9E77 /* GCDAsyncUdpSocket.m */; };
+		091BC3B623263F7000BA9E77 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 091BC3B223263F7000BA9E77 /* GCDAsyncSocket.m */; };
+		091BC3BA23263FBB00BA9E77 /* Location.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 091BC3B823263FBB00BA9E77 /* Location.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		72BE1329A9E2A2D2782C3E9A /* Pods_ProtobufDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1288537F1DB57BA65FACF540 /* Pods_ProtobufDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,12 @@
 		091BC39E2326256C00BA9E77 /* ProtobufDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtobufDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		091BC3A22326256C00BA9E77 /* ProtobufDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtobufDemoUITests.m; sourceTree = "<group>"; };
 		091BC3A42326256C00BA9E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		091BC3B123263F7000BA9E77 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		091BC3B223263F7000BA9E77 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		091BC3B323263F7000BA9E77 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		091BC3B423263F7000BA9E77 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		091BC3B823263FBB00BA9E77 /* Location.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.pbobjc.m; sourceTree = "<group>"; };
+		091BC3B923263FBB00BA9E77 /* Location.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.pbobjc.h; sourceTree = "<group>"; };
 		1288537F1DB57BA65FACF540 /* Pods_ProtobufDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtobufDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6E67CED12E583CCE2392BA /* Pods-ProtobufDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufDemo.debug.xcconfig"; path = "Target Support Files/Pods-ProtobufDemo/Pods-ProtobufDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E9C892618175EE781069087C /* Pods-ProtobufDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufDemo.release.xcconfig"; path = "Target Support Files/Pods-ProtobufDemo/Pods-ProtobufDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +117,8 @@
 		091BC37D2326256B00BA9E77 /* ProtobufDemo */ = {
 			isa = PBXGroup;
 			children = (
+				091BC3B723263FBB00BA9E77 /* Protobuf */,
+				091BC3B023263F7000BA9E77 /* GCD */,
 				091BC37E2326256B00BA9E77 /* AppDelegate.h */,
 				091BC37F2326256B00BA9E77 /* AppDelegate.m */,
 				091BC3812326256B00BA9E77 /* ViewController.h */,
@@ -139,6 +150,26 @@
 			path = ProtobufDemoUITests;
 			sourceTree = "<group>";
 		};
+		091BC3B023263F7000BA9E77 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				091BC3B123263F7000BA9E77 /* GCDAsyncUdpSocket.m */,
+				091BC3B223263F7000BA9E77 /* GCDAsyncSocket.m */,
+				091BC3B323263F7000BA9E77 /* GCDAsyncUdpSocket.h */,
+				091BC3B423263F7000BA9E77 /* GCDAsyncSocket.h */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		091BC3B723263FBB00BA9E77 /* Protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				091BC3B823263FBB00BA9E77 /* Location.pbobjc.m */,
+				091BC3B923263FBB00BA9E77 /* Location.pbobjc.h */,
+			);
+			path = Protobuf;
+			sourceTree = "<group>";
+		};
 		51109A2E8F5F24399C126132 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +184,6 @@
 				BA6E67CED12E583CCE2392BA /* Pods-ProtobufDemo.debug.xcconfig */,
 				E9C892618175EE781069087C /* Pods-ProtobufDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -331,7 +361,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091BC3B523263F7000BA9E77 /* GCDAsyncUdpSocket.m in Sources */,
+				091BC3B623263F7000BA9E77 /* GCDAsyncSocket.m in Sources */,
 				091BC3832326256B00BA9E77 /* ViewController.m in Sources */,
+				091BC3BA23263FBB00BA9E77 /* Location.pbobjc.m in Sources */,
 				091BC38E2326256C00BA9E77 /* main.m in Sources */,
 				091BC3802326256B00BA9E77 /* AppDelegate.m in Sources */,
 			);
