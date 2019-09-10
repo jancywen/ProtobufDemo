@@ -1,0 +1,16 @@
+syntax = 'proto3';
+
+message Location {
+    string accessToken = 1;
+    string cdType = 2;
+    string clientId = 3;
+    string connectUser = 4;
+    string direction = 5;
+    double latitude = 6;
+    double longitude = 7;
+    string orderId = 8;
+    float speed = 9;
+    int64 timestamp = 10;
+    float travelMile = 11;
+    string type = 12;
+}

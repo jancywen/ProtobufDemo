@@ -61,22 +61,6 @@ typedef GPB_ENUM(Location_FieldNumber) {
   Location_FieldNumber_Type = 12,
 };
 
-/**
- *
- * accessToken = "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODQwMDAwMDAwOCIsInV1aWQiOiIwN0Q3NEJFQTA2QUU0RTczODlDQzYyN0MxRTBCRjAxMiIsIm5pY2tOYW1lIjoiZHJpdmVyLTA4IiwidXNlckhlYWRlciI6ImNhcnBsdXNnby1pbmZvLWltZy8yMDE5LTA4LTI3LzQ3N2NhYzgzMTNlZDk4YjNmYmVmYzQ0ZGY2MzA1ZjI1LnBuZyIsInNjb3BlcyI6WyJST0xFX0FDQ0VTU19UT0tFTiJdLCJpc3MiOiJodHRwOi8vd3d3LnJpaHVpc29mdC5jb20iLCJpYXQiOjE1NjgwMTQ5NzUsImV4cCI6MTU2ODYxOTc3NX0.kTQ5Ibg32kGTd8JoYwUNE6tIxq_09AuxVtgJeuJCt_EuCC77-pWxJPtvAh34dt-E4_izcIJXhuTugSGxD02JhA";
- * cdType = 2;
- * clientId = 5cb41eec2d70cc086f5b65da;
- * connectUser = 5d5ca149aacbc02661ca27bb;
- * direction = 2;
- * expTime2 = "";
- * latitude = "30.199544680748";
- * longitude = "120.27409366925";
- * orderId = 5d76028e7754cb4f2ddb5eb9;
- * speed = "0.18106";
- * timestamp = 1568015000468;
- * travelMile = 0;
- * type = LOCATION;
- **/
 @interface Location : GPBMessage
 
 @property(nonatomic, readwrite, copy, null_resettable) NSString *accessToken;
