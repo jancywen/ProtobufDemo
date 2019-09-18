@@ -18,6 +18,12 @@
 		091BC3B523263F7000BA9E77 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 091BC3B123263F7000BA9E77 /* GCDAsyncUdpSocket.m */; };
 		091BC3B623263F7000BA9E77 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 091BC3B223263F7000BA9E77 /* GCDAsyncSocket.m */; };
 		091BC3BA23263FBB00BA9E77 /* Location.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 091BC3B823263FBB00BA9E77 /* Location.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09EA7772232F3CC5009E1E71 /* Message.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA7771232F3CC5009E1E71 /* Message.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09EA777B232F50CA009E1E71 /* LCSocketDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA7776232F50CA009E1E71 /* LCSocketDecoder.m */; };
+		09EA777C232F50CA009E1E71 /* LCSocketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA7777232F50CA009E1E71 /* LCSocketEncoder.m */; };
+		09EA777D232F50CA009E1E71 /* LCBaseSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA7779232F50CA009E1E71 /* LCBaseSocket.m */; };
+		09EA7780232F5157009E1E71 /* GSSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA777E232F5157009E1E71 /* GSSocketManager.m */; };
+		09EE792723321252002A9648 /* GSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EE792623321252002A9648 /* GSViewController.m */; };
 		72BE1329A9E2A2D2782C3E9A /* Pods_ProtobufDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1288537F1DB57BA65FACF540 /* Pods_ProtobufDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +67,19 @@
 		091BC3B423263F7000BA9E77 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		091BC3B823263FBB00BA9E77 /* Location.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.pbobjc.m; sourceTree = "<group>"; };
 		091BC3B923263FBB00BA9E77 /* Location.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.pbobjc.h; sourceTree = "<group>"; };
+		09EA7770232F3CC5009E1E71 /* Message.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.pbobjc.h; sourceTree = "<group>"; };
+		09EA7771232F3CC5009E1E71 /* Message.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.pbobjc.m; sourceTree = "<group>"; };
+		09EA7774232F50CA009E1E71 /* LCSocketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSocketEncoder.h; sourceTree = "<group>"; };
+		09EA7775232F50CA009E1E71 /* LCBaseSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseSocket.h; sourceTree = "<group>"; };
+		09EA7776232F50CA009E1E71 /* LCSocketDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSocketDecoder.m; sourceTree = "<group>"; };
+		09EA7777232F50CA009E1E71 /* LCSocketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSocketEncoder.m; sourceTree = "<group>"; };
+		09EA7778232F50CA009E1E71 /* LCSocketDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSocketDecoder.h; sourceTree = "<group>"; };
+		09EA7779232F50CA009E1E71 /* LCBaseSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseSocket.m; sourceTree = "<group>"; };
+		09EA777A232F50CA009E1E71 /* LCSocketCoderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSocketCoderProtocol.h; sourceTree = "<group>"; };
+		09EA777E232F5157009E1E71 /* GSSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSocketManager.m; sourceTree = "<group>"; };
+		09EA777F232F5157009E1E71 /* GSSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSocketManager.h; sourceTree = "<group>"; };
+		09EE792523321252002A9648 /* GSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSViewController.h; sourceTree = "<group>"; };
+		09EE792623321252002A9648 /* GSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSViewController.m; sourceTree = "<group>"; };
 		1288537F1DB57BA65FACF540 /* Pods_ProtobufDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtobufDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6E67CED12E583CCE2392BA /* Pods-ProtobufDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufDemo.debug.xcconfig"; path = "Target Support Files/Pods-ProtobufDemo/Pods-ProtobufDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E9C892618175EE781069087C /* Pods-ProtobufDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufDemo.release.xcconfig"; path = "Target Support Files/Pods-ProtobufDemo/Pods-ProtobufDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,12 +136,16 @@
 		091BC37D2326256B00BA9E77 /* ProtobufDemo */ = {
 			isa = PBXGroup;
 			children = (
+				09EE792423320DCB002A9648 /* SocketManager */,
+				09EA7773232F50CA009E1E71 /* SocketEncode */,
 				091BC3B723263FBB00BA9E77 /* Protobuf */,
 				091BC3B023263F7000BA9E77 /* GCD */,
 				091BC37E2326256B00BA9E77 /* AppDelegate.h */,
 				091BC37F2326256B00BA9E77 /* AppDelegate.m */,
 				091BC3812326256B00BA9E77 /* ViewController.h */,
 				091BC3822326256B00BA9E77 /* ViewController.m */,
+				09EE792523321252002A9648 /* GSViewController.h */,
+				09EE792623321252002A9648 /* GSViewController.m */,
 				091BC3842326256B00BA9E77 /* Main.storyboard */,
 				091BC3872326256C00BA9E77 /* Assets.xcassets */,
 				091BC3892326256C00BA9E77 /* LaunchScreen.storyboard */,
@@ -164,10 +187,35 @@
 		091BC3B723263FBB00BA9E77 /* Protobuf */ = {
 			isa = PBXGroup;
 			children = (
+				09EA7770232F3CC5009E1E71 /* Message.pbobjc.h */,
+				09EA7771232F3CC5009E1E71 /* Message.pbobjc.m */,
 				091BC3B823263FBB00BA9E77 /* Location.pbobjc.m */,
 				091BC3B923263FBB00BA9E77 /* Location.pbobjc.h */,
 			);
 			path = Protobuf;
+			sourceTree = "<group>";
+		};
+		09EA7773232F50CA009E1E71 /* SocketEncode */ = {
+			isa = PBXGroup;
+			children = (
+				09EA7774232F50CA009E1E71 /* LCSocketEncoder.h */,
+				09EA7775232F50CA009E1E71 /* LCBaseSocket.h */,
+				09EA7776232F50CA009E1E71 /* LCSocketDecoder.m */,
+				09EA7777232F50CA009E1E71 /* LCSocketEncoder.m */,
+				09EA7778232F50CA009E1E71 /* LCSocketDecoder.h */,
+				09EA7779232F50CA009E1E71 /* LCBaseSocket.m */,
+				09EA777A232F50CA009E1E71 /* LCSocketCoderProtocol.h */,
+			);
+			path = SocketEncode;
+			sourceTree = "<group>";
+		};
+		09EE792423320DCB002A9648 /* SocketManager */ = {
+			isa = PBXGroup;
+			children = (
+				09EA777F232F5157009E1E71 /* GSSocketManager.h */,
+				09EA777E232F5157009E1E71 /* GSSocketManager.m */,
+			);
+			path = SocketManager;
 			sourceTree = "<group>";
 		};
 		51109A2E8F5F24399C126132 /* Frameworks */ = {
@@ -363,10 +411,16 @@
 			files = (
 				091BC3B523263F7000BA9E77 /* GCDAsyncUdpSocket.m in Sources */,
 				091BC3B623263F7000BA9E77 /* GCDAsyncSocket.m in Sources */,
+				09EA777B232F50CA009E1E71 /* LCSocketDecoder.m in Sources */,
 				091BC3832326256B00BA9E77 /* ViewController.m in Sources */,
+				09EA7772232F3CC5009E1E71 /* Message.pbobjc.m in Sources */,
+				09EA7780232F5157009E1E71 /* GSSocketManager.m in Sources */,
 				091BC3BA23263FBB00BA9E77 /* Location.pbobjc.m in Sources */,
+				09EA777D232F50CA009E1E71 /* LCBaseSocket.m in Sources */,
 				091BC38E2326256C00BA9E77 /* main.m in Sources */,
 				091BC3802326256B00BA9E77 /* AppDelegate.m in Sources */,
+				09EE792723321252002A9648 /* GSViewController.m in Sources */,
+				09EA777C232F50CA009E1E71 /* LCSocketEncoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

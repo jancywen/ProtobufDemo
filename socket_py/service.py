@@ -1,8 +1,7 @@
 
 import Location_pb2
-
+import Message_pb2
 import socket
-
 import time
 
 
@@ -18,15 +17,23 @@ while True:
 
     print(data)
     
-    if data == bytes('PING', encoding='utf-8'):
-        conn.send(bytes("PONG", encoding='utf-8'))
+
+
+    req = Message_pb2.Request()
+    req.ParseFromString(data)
+    print(req.clientId)
+
+    conn.send(data)
+
+    # if data == bytes('PING', encoding='utf-8'):
+    #     conn.send(bytes("PONG", encoding='utf-8'))
     
-    else:
-        location = Location_pb2.Location()
-        location.ParseFromString(data)
+    # else:
+    #     location = Location_pb2.Location()
+    #     location.ParseFromString(data)
 
-        print(location.accessToken)
+    #     print(location.accessToken)
 
-        conn.send(data)
+    #     conn.send(data)
 
     conn.close()
